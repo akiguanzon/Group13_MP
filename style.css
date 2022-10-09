@@ -1,0 +1,411 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Code above is just for a CSS Reset para consistent siya across all browsers don't mind the code above this */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+:root {
+    --primary: #ebebeb;
+    --accent: #ff6700;
+    --subtle: #c0c0c0;
+    --text-primary: black;
+    --text-accent: #004e98;
+    --text-subtle: #3a6ea5;
+    --text-link: #E85A4F;
+    --border-color: rgb(214, 214, 214);
+    --title-font: 'Noto Serif', serif;
+}
+
+body {
+    background-color: var(--primary);
+    font-family: var(--title-font);
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-primary);
+    margin: none;
+    padding: none;
+    transition: all 0.3s;
+}
+
+a:hover {
+    color: var(--text-primary);
+    opacity: 80%;
+}
+
+h1,
+h2 {
+    font-family: var(--title-font);
+}
+
+.my-primary {
+    color: black;
+    font-family: var(--title-font);
+}
+
+/* Username and user on top of website Code */
+
+.user {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 3rem 0;
+    margin: 0 4rem 0 0;
+}
+
+.user-button {
+    width: 10rem;
+    height: 3rem;
+    display: flex;
+    padding: 0.3rem 1rem 0.5rem 1.5rem;
+    transition: all 0.5s;
+    cursor: pointer;
+
+}
+
+
+.username {
+    font-size: 1.1rem;
+    padding: 0.6rem 0.6rem 0 0.7rem;
+    text-transform: uppercase;
+    font-family: 'Anton', sans-serif;
+}
+
+/* START OF NAV */
+
+#header {
+    padding: 2rem 0 15rem 0;
+    background-color: var(--primary);
+    width: 100%;
+    max-width: none;
+}
+
+.navbar {
+    background-color: var(--text-accent);
+    padding: auto;
+    font-size: 1.2rem;
+}
+
+
+.nav-item {
+    padding-left: auto;
+}
+
+.nav-link:hover {
+    color: var(--accent);
+}
+
+.nav-link:focus {
+    color: var(--accent);
+}
+
+.navbar-color {
+    color: var(--primary);
+}
+
+/* END OF NAV */
+
+.btn {
+    border-color: var(--primary);
+}
+
+.btn:hover {
+    background-color: var(--accent);
+    color: var(--text-primary);
+}
+
+/* START OF SCROLLING/CARD CODE */
+.my-card {
+    width: 500px;
+    height: 650px;
+    background-color: var(--primary);
+    display: inline-block;
+    margin: 10px 0px;
+    white-space: normal;
+    transition: all 0.5s;
+    color: var(--text-primary);
+    cursor: pointer;
+}
+
+.my-card:hover {
+    background-color: var(--subtle);
+    box-shadow: 5px 15px 10px var(--subtle);
+}
+
+.cardContent {
+    display: block;
+    padding: 2rem 2rem;
+}
+
+.date-line {
+    padding: 1rem 1.3rem 0 1.3rem;
+    opacity: 80%;
+}
+
+.cardHeader {
+    font-size: 3rem;
+    padding: 1rem 0 3rem 0;
+    text-align: center;
+    transition: all 0.1s;
+}
+
+.cardHeader:hover {
+    color: var(--text-accent);
+    text-decoration: underline;
+    text-decoration-thickness: 0.5px;
+    text-decoration-color: var(--text-primary);
+}
+
+.author-line {
+    padding: 0 2rem;
+}
+
+.author:hover {
+    color: var(--text-accent);
+    text-decoration: underline;
+    text-decoration-thickness: 0.5px;
+    text-decoration-color: var(--text-primary);
+}
+
+.cardDesc {
+    display: inline-block;
+    padding: 2rem;
+    font-size: 1.5rem;
+}
+
+.scroll-case {
+    padding: 0px 30px;
+    position: relative;
+}
+
+.scrolling-wrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+}
+
+.scrolling-wrapper::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+    background-color: #aaa;
+}
+
+.scrolling-wrapper::-webkit-scrollbar-thumb {
+    background-color: black;
+}
+
+.scrolling-wrapper::-webkit-scrollbar {
+    -webkit-appearance: none;
+    display: none;
+}
+
+.left-click {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.right-click {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.button-gone {
+    display: none;
+}
+
+/* END OF SCROLLING/CARD CODE */
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1920px) {
+    .navbar-expand-xxl .navbar-nav .dropdown-menu {
+        margin-left: 22rem;
+    }
+
+    .nav-item {
+        padding-left: 21rem;
+    }
+}
+
+@media (max-width: 1700px) {
+    .nav-item {
+        padding-left: 14rem;
+    }
+
+    .nav-item:nth-of-type(3) {
+        padding-right: 8rem;
+    }
+
+    .nav-item:nth-of-type(1) {
+        padding-left: 14rem;
+    }
+
+    .navbar-expand-xxl .navbar-nav .dropdown-menu {
+        margin-left: 9rem;
+    }
+
+    #header {
+        margin-top: 2rem;
+    }
+
+    .user {
+        margin: none;
+        padding: none;
+    }
+
+    .user-button {
+        display: none;
+    }
+}
