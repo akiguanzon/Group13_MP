@@ -166,9 +166,6 @@ a {
     color: black;
 }
 
-a:hover {
-    color: black;
-}
 
 
 .user>a {
@@ -201,8 +198,6 @@ h2 {
 .user {
     display: flex;
     flex-direction: row-reverse;
-    padding: 1rem 1rem;
-    margin: 1rem 1rem;
     color: var(--primary);
 }
 
@@ -341,7 +336,7 @@ h2 {
 
 .cardContent {
     display: block;
-    padding: 2rem 2rem;
+    margin-left: 1rem;
 }
 
 .date-line {
@@ -350,12 +345,14 @@ h2 {
 }
 
 .cardHeader {
-    font-size: 3rem;
-    padding: 1rem 0 3rem 0;
+    font-size: 2.5rem;
+    padding: 1rem 0 1rem 0;
     text-align: center;
     transition: all 0.1s;
     font-family: var(--title-font);
+    cursor: pointer;
 }
+
 
 .cardHeader:hover {
     color: var(--text-accent);
@@ -365,7 +362,8 @@ h2 {
 }
 
 .author-line {
-    padding: 0 2rem;
+    padding: 1rem 2rem 0 2rem;
+    cursor: pointer;
 }
 
 .author:hover {
@@ -373,6 +371,14 @@ h2 {
     text-decoration: underline;
     text-decoration-thickness: 0.5px;
     text-decoration-color: var(--text-primary);
+}
+
+.cardImage {
+    width: 25rem;
+    height: 15rem;
+    align-self: center;
+    margin-left: 2.2rem;
+    border-radius: 5%;
 }
 
 .cardCategory {
@@ -387,8 +393,10 @@ h2 {
 
 .cardDesc {
     display: inline-block;
-    padding: 2rem;
-    font-size: 1.5rem;
+    padding-top: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 1.3rem;
 }
 
 .scroll-case {
@@ -464,7 +472,7 @@ h2 {
 
 .featured-post {
     width: 95%;
-    height: 30rem;
+    min-height: 60rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -472,6 +480,9 @@ h2 {
     padding-left: 5rem;
     background-color: var(--primary);
     margin: 2rem 0;
+    border-radius: 5%;
+    box-shadow: 10px 10px 10px #8f8f8f;
+    transition: all 0.3s;
 }
 
 
@@ -479,6 +490,20 @@ h2 {
 .featured-post:hover {
     background-color: var(--subtle);
 }
+
+.featured-post>.cardDesc {
+    margin-bottom: 2rem;
+}
+
+.featuredImage {
+    width: 80rem;
+    height: 33rem;
+    align-self: center;
+    margin: 2rem 0 4rem 0;
+    border-radius: 10%;
+}
+
+
 
 .featured-post>.cardHeader {
     font-size: 4rem;
@@ -589,6 +614,7 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: black;
 }
 
 /* END OF CATEGORIES */
@@ -677,7 +703,7 @@ h2 {
 
 /* MEDIA QUERIES */
 
-@media (max-width: 1920px) {
+/* @media (max-width: 1920px) {
     .navbar-expand-xxl .navbar-nav .dropdown-menu {
         margin-left: 22rem;
     }
@@ -716,4 +742,4 @@ h2 {
     .user-button {
         display: none;
     }
-}
+} */
