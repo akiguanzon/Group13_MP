@@ -159,11 +159,20 @@ body {
     font-family: var(--third-font);
 }
 
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+
+a:hover {
+    color: black;
+}
+
+
 .user>a {
     text-decoration: none;
     color: var(--primary);
-    margin: none;
-    padding: none;
     transition: all 0.3s;
 }
 
@@ -191,8 +200,8 @@ h2 {
 .user {
     display: flex;
     flex-direction: row-reverse;
-    padding: 0 0;
-    margin: 0 0 0 0;
+    padding: 1rem 1rem;
+    margin: 1rem 1rem;
     color: var(--primary);
 }
 
@@ -364,6 +373,16 @@ h2 {
     text-decoration-color: var(--text-primary);
 }
 
+.cardCategory {
+    margin-left: 2.5rem;
+    opacity: 50%;
+    transition: all 0.2s;
+}
+
+.cardCategory:hover {
+    text-decoration: underline;
+}
+
 .cardDesc {
     display: inline-block;
     padding: 2rem;
@@ -469,7 +488,7 @@ h2 {
 .categories {
     width: 100%;
     background-color: var(--primary);
-    height: 50rem;
+    height: 76rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -477,7 +496,7 @@ h2 {
 
 .categories-box {
     width: 80rem;
-    height: 40rem;
+    height: 64rem;
     background-image: linear-gradient(to right, #004e98, #ff6700);
     border-radius: 3%;
     box-shadow: 10px 10px 10px #8f8f8f;
@@ -496,14 +515,14 @@ h2 {
 
 .category-circle:hover {
     width: 100%;
-    height: 38%;
+    height: 24%;
     border-radius: 5%;
     margin: 0;
 }
 
-.category-circle:nth-of-type(3):hover {
+.category-circle:nth-of-type(5):hover {
     width: 100%;
-    height: 40%;
+    height: 25%;
     border-radius: 5%;
     margin: 0;
 }
@@ -546,7 +565,83 @@ h2 {
 
 /* FOOTER CODE */
 
+.vl {
+    border-left: 0.3rem solid var(--primary);
+    height: 75%;
+    opacity: 20%;
+}
 
+.website-footer {
+    width: 100%;
+    height: 30rem;
+    background-color: var(--text-accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-with-title {
+    display: inline-block;
+    margin-right: 10rem;
+}
+
+.footer-logo {
+    height: 12rem;
+    width: 12rem;
+    align-self: center;
+}
+
+.footer-title {
+    margin-top: 1rem;
+    color: var(--primary);
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.footer-slogan {
+    margin-top: 0.5rem;
+    color: var(--primary);
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+.footer-copyright {
+    margin-top: 0.5rem;
+    color: var(--primary);
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    margin-left: 9rem;
+    /* align-items: center; */
+}
+
+.footer-col-title {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: var(--primary);
+    font-weight: bold;
+    margin-bottom: 1.2rem;
+}
+
+.footer-item {
+    margin-top: 1.2rem;
+    font-size: 1.15rem;
+    text-transform: uppercase;
+    color: var(--primary);
+    width: 100%;
+    height: 1.5rem;
+    padding: 0.3rem;
+    transition: all 0.2s;
+}
+
+.footer-item:hover {
+    background-color: rgba(143, 143, 143, 0.4);
+    color: var(--primary);
+}
 
 /* END OF FOOTER CODE */
 
