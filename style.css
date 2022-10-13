@@ -5,6 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rancho');
 
 html,
 body,
@@ -149,7 +150,7 @@ table {
     --text-subtle: #3a6ea5;
     --text-link: #E85A4F;
     --border-color: rgb(214, 214, 214);
-    --title-font: 'Noto Serif', serif;
+    --title-font: 'Rancho', sans-serif;
     --secondary-font: 'Anton', sans-serif;
     --third-font: 'Noto Sans', sans-serif;
 }
@@ -353,6 +354,7 @@ h2 {
     padding: 1rem 0 3rem 0;
     text-align: center;
     transition: all 0.1s;
+    font-family: var(--title-font);
 }
 
 .cardHeader:hover {
@@ -449,8 +451,33 @@ h2 {
 
 /* START OF FEATURED POST CODE */
 
+.featured {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(45deg, transparent 20%, var(--accent) 25%, transparent 25%),
+        linear-gradient(-45deg, transparent 20%, var(--accent) 25%, transparent 25%),
+        linear-gradient(-45deg, transparent 75%, var(--accent) 80%, transparent 0),
+        radial-gradient(var(--subtle) 2px, transparent 0);
+    background-size: 30px 30px, 30px 30px;
+}
+
 .featured-post {
-    margin: 10rem 0;
+    width: 95%;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 5rem;
+    background-color: var(--primary);
+    margin: 2rem 0;
+}
+
+
+
+.featured-post:hover {
+    background-color: var(--subtle);
 }
 
 .featured-post>.cardHeader {
@@ -465,8 +492,6 @@ h2 {
 .box-divider {
     width: 100%;
     height: 14rem;
-    /* Created with https://www.css-gradient.com */
-    /* Created with https://www.css-gradient.com */
     background-image: linear-gradient(to right, #004e98, #ff6700);
 
 }
@@ -478,7 +503,7 @@ h2 {
     font-family: 'Anton', sans-serif;
     color: var(--primary);
     letter-spacing: 0.7rem;
-    /* Created with https://www.css-gradient.com */
+    font-family: var(--title-font);
 
 
 }
@@ -492,6 +517,11 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: linear-gradient(45deg, transparent 20%, var(--accent) 25%, transparent 25%),
+        linear-gradient(-45deg, transparent 20%, var(--accent) 25%, transparent 25%),
+        linear-gradient(-45deg, transparent 75%, var(--accent) 80%, transparent 0),
+        radial-gradient(var(--subtle) 2px, transparent 0);
+    background-size: 30px 30px, 30px 30px;
 }
 
 .categories-box {
@@ -540,7 +570,7 @@ h2 {
     visibility: hidden;
     -webkit-transition: all 0s;
     font-size: 5rem;
-    font-family: var(--secondary-font);
+    font-family: var(--title-font);
     text-transform: uppercase;
 }
 

@@ -10,11 +10,12 @@
     --text-subtle: #3a6ea5;
     --text-link: #E85A4F;
     --border-color: rgb(214, 214, 214);
-    --title-font: 'Noto Serif', serif;
+    --title-font: 'Rancho', sans-serif;
     --secondary-font: 'Anton', sans-serif;
     --third-font: 'Noto Sans', sans-serif;
     --fourth-font: 'Rancho', sans-serif;
 }
+
 
 hr {
     width: 100%;
@@ -24,10 +25,15 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--subtle);
+    background-image: linear-gradient(45deg, transparent 20%, var(--accent) 25%, transparent 25%),
+        linear-gradient(-45deg, transparent 20%, var(--accent) 25%, transparent 25%),
+        linear-gradient(-45deg, transparent 75%, var(--accent) 80%, transparent 0),
+        radial-gradient(var(--subtle) 2px, transparent 0);
+    background-size: 30px 30px, 30px 30px;
     width: 100%;
     min-height: 50rem;
 }
+
 
 .posts-categories {
     display: flex;
@@ -81,6 +87,7 @@ hr {
     flex-direction: column;
     align-items: center;
     margin: 5rem 0;
+    box-shadow: 5px 15px 15px var(--subtle);
 }
 
 .post-card {
