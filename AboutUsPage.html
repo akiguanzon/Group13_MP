@@ -3,14 +3,18 @@
 <html>
 
 <head>
-	<!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
 
     <link href='https://fonts.googleapis.com/css?family=Noto Sans' rel='stylesheet'>
 
-	<style>
+    <title>Social-net | About Us</title>
+    <style>
         #font1 {
             font-family: 'Noto Sans';
         }
@@ -23,131 +27,169 @@
         }
 
         .Bar {
-          overflow: hidden;
-          position: absolute;
-          background-image: linear-gradient(45deg, #003465, #0065c5);
-          box-shadow: 0px 2px 15px;
-          top: 0;
-          right: 0;
-  		  width: 750px;
-          height:750px;
-        }
-        .Bar a {
-          float: left;
-          color: #f2f2f2;
-          text-align: center;
-          padding: 100px 16px;
-          text-decoration: none;
-          font-family: 'Noto Sans';font-size: 22px;
+            overflow: hidden;
+            position: absolute;
+            background-image: linear-gradient(45deg, #003465, #0065c5);
+            box-shadow: 0px 2px 15px;
+            top: 0;
+            right: 0;
+            width: 750px;
+            height: 750px;
         }
 
-        .ABOUTUS{
+        .Bar a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 100px 16px;
+            text-decoration: none;
+            font-family: 'Noto Sans';
+            font-size: 22px;
+        }
+
+        .ABOUTUS {
             top: 10px;
             right: 175px;
             font-size: 75px;
             text-align: center;
-            color:white;
-            position:absolute;
+            color: white;
+            position: absolute;
         }
-        .ABOUTUS:hover{color:#ff6700;text-shadow: 0px 1px 10px black;}
-        .ABOUTUS:active{color:#ff6700;font-weight:bolder;text-shadow: 0px 1px 15px black;}
+
+        .ABOUTUS:hover {
+            color: #ff6700;
+            text-shadow: 0px 1px 10px black;
+        }
+
+        .ABOUTUS:active {
+            color: #ff6700;
+            font-weight: bolder;
+            text-shadow: 0px 1px 15px black;
+        }
 
         .LINE {
-          overflow: hidden;
-          position: absolute;
-          background: white;
-          top: 120px;
-          right: 105px;
-  		  width: 70%;
-          height:1%
+            overflow: hidden;
+            position: absolute;
+            background: white;
+            top: 120px;
+            right: 105px;
+            width: 70%;
+            height: 1%
         }
-        
-        .PARAGRAPH{
-            color:white;
+
+        .PARAGRAPH {
+            color: white;
             margin: 170px 50px 50px 60px;
-            font-size:20px;
+            font-size: 20px;
             text-align: justify;
         }
 
-        .BACKTOHOMEPAGE{
-            color:white;
+        .BACKTOHOMEPAGE {
+            color: white;
             margin: 300px 50px 0px 200px;
-            font-size:20px;
+            font-size: 20px;
             text-align: right;
         }
 
-        .BACKTOHOMEPAGE:hover{color:#ff6700;text-shadow: 0px 1px 20px black;}
-        .BACKTOHOMEPAGE:active{font-weight:bolder;color:#ff6700;text-shadow: 0px 5px 25px black;}
+        .BACKTOHOMEPAGE:hover {
+            color: #ff6700;
+            text-shadow: 0px 1px 20px black;
+        }
 
-        .LOGO{
-            position:fixed;
+        .BACKTOHOMEPAGE:active {
+            font-weight: bolder;
+            color: #ff6700;
+            text-shadow: 0px 5px 25px black;
+        }
+
+        .LOGO {
+            position: fixed;
             margin: 30px 50px 0px 30px;
         }
 
-        #LOGOPHOTO{
-            width:250px;
-            height:auto;
+        #LOGOPHOTO {
+            width: 250px;
+            height: auto;
         }
 
-        .SOCIALNET{
-            position:fixed; 
-            left:290px; 
-            top:55px; 
-            font-size:70px;
-            text-decoration:none;
-            color: white;
-        }
-        .SOCIALNET:hover{text-shadow: 0px 1px 5px black;}
-        .SOCIALNET:active{font-weight:bolder;text-shadow: 0px 1px 10px black;}
-
-        .SLOGAN{
-            position:fixed; 
-            left:290px; 
-            top:150px; 
-            font-size:25px;
-            text-decoration:none;
-            color: white;
-        }
-        .SLOGAN:hover{text-shadow: 0px 1px 5px black;}
-        .SLOGAN:active{font-weight:bolder;text-shadow: 0px 1px 10px black;}
-
-        .GIF{
-            position:fixed; 
-            left:20px; 
-            top:270px; 
-            font-size:25px;
-            text-decoration:none;
+        .SOCIALNET {
+            position: fixed;
+            left: 290px;
+            top: 55px;
+            font-size: 70px;
+            text-decoration: none;
             color: white;
         }
 
-        #GIFPHOTO{
-            width:650px;
-            height:auto;
+        .SOCIALNET:hover {
+            text-shadow: 0px 1px 5px black;
         }
 
+        .SOCIALNET:active {
+            font-weight: bolder;
+            text-shadow: 0px 1px 10px black;
+        }
+
+        .SLOGAN {
+            position: fixed;
+            left: 290px;
+            top: 150px;
+            font-size: 25px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .SLOGAN:hover {
+            text-shadow: 0px 1px 5px black;
+        }
+
+        .SLOGAN:active {
+            font-weight: bolder;
+            text-shadow: 0px 1px 10px black;
+        }
+
+        .GIF {
+            position: fixed;
+            left: 20px;
+            top: 270px;
+            font-size: 25px;
+            text-decoration: none;
+            color: white;
+        }
+
+        #GIFPHOTO {
+            width: 650px;
+            height: auto;
+        }
     </style>
 </head>
 
 <body id="background">
 
-    <div class="LOGO"><img src="https://www.nicepng.com/png/full/170-1709508_web-solutions-web-icon-white-png.png" id="LOGOPHOTO"></div>
-    <div class="GIF"><img src="https://images.squarespace-cdn.com/content/v1/5d7bd675b95d9b3bf482a2e2/1585769822469-DYS3O5LZ0WNN0KYRJTRM/People+talking" id="GIFPHOTO"></div>
+    <div class="LOGO"><img src="https://www.nicepng.com/png/full/170-1709508_web-solutions-web-icon-white-png.png"
+            id="LOGOPHOTO"></div>
+    <div class="GIF"><img
+            src="https://images.squarespace-cdn.com/content/v1/5d7bd675b95d9b3bf482a2e2/1585769822469-DYS3O5LZ0WNN0KYRJTRM/People+talking"
+            id="GIFPHOTO"></div>
     <a id="font1" class="SOCIALNET">social-net</a>
     <a id="font1" class="SLOGAN">find your everyday reads here!</a>
-    
+
     <div class="Bar">
-        
-		<div id="font1" class="ABOUTUS">ABOUT US</div>
+
+        <div id="font1" class="ABOUTUS">ABOUT US</div>
 
         <div class="LINE"></div>
 
-        <div id="font1" class="PARAGRAPH">social-net is about curating articles of various categories into one area. Our company is designed to save you, the daily user, time from having to skim through all the various articles by summarizing the information of an article and leaving it up to you to decide whether the article is worth your time.</div>
+        <div id="font1" class="PARAGRAPH">social-net is about curating articles of various categories into one area. Our
+            company is designed to save you, the daily user, time from having to skim through all the various articles
+            by summarizing the information of an article and leaving it up to you to decide whether the article is worth
+            your time.</div>
 
         <div id="font1" class="BACKTOHOMEPAGE">BACK TO HOME PAGE</div>
 
-	</div>
+    </div>
 
-    
+
 </body>
 
 </html>
