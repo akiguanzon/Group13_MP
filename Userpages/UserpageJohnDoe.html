@@ -120,7 +120,7 @@
           text-align: left;
           box-shadow: 0px 1px 7px black;
           width: 350px;
-          height: 250px;
+          height: 440px;
           border-radius: 25px;
           display: inline-block;
           text-align: left;
@@ -199,9 +199,9 @@
 
         .PostDisplayTitle{position:absolute;left:545px;top:0px;font-size:50px;color:#003C75}
 
-        #PostTitle{font-weight:bolder;font-size:18px}
-        #PostDescription{font-size:13px}
-        #PostBody{font-size:15px}
+        .PostTitle{font-weight:bolder;font-size:25px;}
+        .PostDescription{font-size:13px}
+        .PostBody{font-size:15px}
 
         .PhotoGif{position:absolute;left:40px;top:150px;}
         #PhotoGifImage{width:400px;height:300px;border-radius:10%;box-shadow: 0px 1px 7px black}
@@ -210,6 +210,9 @@
 
         .SortPostsBy:hover{font-weight:bolder;color:white;text-shadow: 0px 1px 10px black;}
         .SortPostsBy:active{font-weight:bolder;color:#00284e;text-shadow: 0px 1px 15px black;}
+
+        .PostPhoto{position:absolute;margin: 20px 0px 0px 0px}
+        #PostPhotoImage{width:320px;height:200px;border-radius:10%;box-shadow: 0px 1px 7px black;}
 
     </style>
 
@@ -221,22 +224,22 @@
 	</div>
 
     <!-- Navbar Logo -->
-	<a class="NavbarLogo"><img src="https://www.nicepng.com/png/full/170-1709508_web-solutions-web-icon-white-png.png" id="NavbarLogoImage"></a>
+	<a href="https://akiguanzon.github.io/Group13_MP/index.html" class="NavbarLogo"><img src="https://www.nicepng.com/png/full/170-1709508_web-solutions-web-icon-white-png.png" id="NavbarLogoImage"></a>
 
     <!-- Navbar Title -->
-	<a id="font2" class="NavbarTitle">social-net</a>
+	<a href="https://akiguanzon.github.io/Group13_MP/index.html" id="font2" class="NavbarTitle">social-net</a>
     
     <!-- Navbar Slogan -->
-	<a id="font2" class="NavbarSlogan">find your everyday reads here!</a>
+	<a href="https://akiguanzon.github.io/Group13_MP/index.html" id="font2" class="NavbarSlogan">find your everyday reads here!</a>
 
     <!-- Navbar User Icon -->
-    <a class="NavbarUserIcon"><img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" id="NavbarIconImage"></a>
+    <a href="https://akiguanzon.github.io/Group13_MP/login-signup-forgotpassword/registration.html" class="NavbarUserIcon"><img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" id="NavbarIconImage"></a>
 
     <!-- Navbar Home Icon -->
-    <a class="NavbarHomeIcon"><img src="https://www.pngkey.com/png/full/12-127881_house-blue-clipart-royalty-free-library-free-home.png" id="NavbarIconImage"></a>
+    <a href="https://akiguanzon.github.io/Group13_MP/index.html" class="NavbarHomeIcon"><img src="https://www.pngkey.com/png/full/12-127881_house-blue-clipart-royalty-free-library-free-home.png" id="NavbarIconImage"></a>
 
     <!-- Navbar Logout Icon -->
-    <a class="NavbarLogoutIcon"><img src="https://freesvg.org/img/1538677257.png" id="NavbarIconImage"></a>
+    <a href="https://akiguanzon.github.io/Group13_MP/login-signup-forgotpassword/login.html" class="NavbarLogoutIcon"><img src="https://freesvg.org/img/1538677257.png" id="NavbarIconImage"></a>
 
     <!-- Navbar Create Post Icon -->
     <a class="NavbarCreatePostIcon"><img src="https://cdn0.iconfinder.com/data/icons/interface-icons-rounded/110/Pencil-512.png" id="NavbarIconImage"></a>
@@ -248,9 +251,9 @@
         <input type="text"style="postition:fixed;right:155px;top:25px;width:400px">
     </form>
     <!-- Profile Icon -->
-    <a class="ProfileIcon"><img src="https://render.fineartamerica.com/images/rendered/default/poster/8/8/break/images/artworkimages/medium/3/american-psycho-hip-to-be-square-bobby-zeik.jpg" id="ProfileIconImage"></a>
+    <a href="https://akiguanzon.github.io/Group13_MP/Userpages/UserpageJohnDoe.html" class="ProfileIcon"><img src="https://render.fineartamerica.com/images/rendered/default/poster/8/8/break/images/artworkimages/medium/3/american-psycho-hip-to-be-square-bobby-zeik.jpg" id="ProfileIconImage"></a>
     <!-- Profile Username -->
-    <a id="font2" class="ProfileUsername">John_Doe</a>
+    <a href="https://akiguanzon.github.io/Group13_MP/Userpages/UserpageJohnDoe.html" id="font2" class="ProfileUsername">John_Doe</a>
 	
 
     <div class="userpageframe">
@@ -260,9 +263,10 @@
         <!-- Bio Description -->
         <div id="font1" class="BioDesc">Hello, I’m John Doe and I like to watch movies.</div>
 
-        <div id="font1" class="SortPostsBy" style="right:450px">Sort Posts By:</div>
-        <div id="font1" class="SortPostsBy" style="right:300px">By Category</div>
-        <div id="font1" class="SortPostsBy" style="right:160px">By Latest</div>
+        <div id="font1" class="SortPostsBy" style="right:450px">View Posts By:</div>
+        <div onclick="location.href='https://akiguanzon.github.io/Group13_MP/index.html';" id="font1" class="SortPostsBy" style="right:300px">By Category</div>
+        <div onclick="location.href='https://akiguanzon.github.io/Group13_MP/search-list/latest.html';" id="font1" class="SortPostsBy" style="right:160px">By Latest</div>
+        <div onclick="location.href='https://akiguanzon.github.io/Group13_MP/search-list/featured.html';" id="font1" class="SortPostsBy" style="right:40px">By Feature</div>
 
         <!-- Photo Gif -->
         <div class="PhotoGif"><img src="https://media.tenor.com/CEOHpTiX1S4AAAAM/gene-kelly-singing-in-the-rain.gif" id="PhotoGifImage"></div>
@@ -271,20 +275,20 @@
         <div id="font2" class="PostDisplayTitle">John_Doe's Posts</div>
         <!-- "Posts Displayer -->
         <div class="UserpagePosts" style="right:50px;top:150px;color:#003C75">
-        	<!-- Post 1 -->
-        	<div class="UserpagePostsPosts">
-            	<div style="#PostTitle">Title: Excited for a Movie Release</div>
-                <div style="#PostDescription">Date Posted: 10/03/2022</div>
-                <div style="#PostDescription">Category: Film</div>
-                <div style="#PostBody"><br>I’m so excited!!! A movie I really like is going to be released next week! Me and my friends have been waiting for this movie to come out so bad!</div>
+            <!-- Post 1 -->
+        	<div onclick="location.href='https://akiguanzon.github.io/Group13_MP/samplepostpages/post4.html';" class="UserpagePostsPosts">
+            	<div id="font2" class="PostTitle">Impact of the COVID-19 pandemic on teaching and learning in health professional education: a mixed methods study protocol</div>
+                <div class="PostDescription">March 1, 2021</div>
+                <div onclick="location.href='https://akiguanzon.github.io/Group13_MP/search-list/school.html';" class="PostDescription">School</div>
+                <div class="PostPhoto"><img src="https://akiguanzon.github.io/Group13_MP/samplepostpages/pandemic.jpg" id="PostPhotoImage"></div>
             </div>
-            
+
             <!-- Post 2 -->
-        	<div class="UserpagePostsPosts">
-            	<div id="#PostTitle">Title: Postponed Movie Release</div>
-                <div id="#PostDescription">Date Posted: 10/07/2022</div>
-                <div id="#PostDescription">Category: Film</div>
-                <div id="#PostBody"><br>Just found out that the release of a film I’ve been looking forward to has been postponed. I don’t know why. Waiting on a reason from the producers of the upcoming film</div>
+        	<div onclick="location.href='https://akiguanzon.github.io/Group13_MP/samplepostpages/post2.html';" class="UserpagePostsPosts">
+            	<div id="font2" class="PostTitle">Video Games May Trigger Rare Heart Attacks in Kids: Study</div>
+                <div class="PostDescription">October 13, 2022</div>
+                <div onclick="location.href='https://akiguanzon.github.io/Group13_MP/search-list/gaming.html';" class="PostDescription">Gaming</div>
+                <div class="PostPhoto"><img src="https://akiguanzon.github.io/Group13_MP/samplepostpages/gamer.jpg" id="PostPhotoImage"></div>
             </div>
         </div>
     </div>
