@@ -120,7 +120,7 @@
           text-align: left;
           box-shadow: 0px 1px 7px black;
           width: 350px;
-          height: 250px;
+          height: 440px;
           border-radius: 25px;
           display: inline-block;
           text-align: left;
@@ -199,9 +199,9 @@
 
         .PostDisplayTitle{position:absolute;left:545px;top:0px;font-size:50px;color:#003C75}
 
-        #PostTitle{font-weight:bolder;font-size:18px}
-        #PostDescription{font-size:13px}
-        #PostBody{font-size:15px}
+        .PostTitle{font-weight:bolder;font-size:25px;}
+        .PostDescription{font-size:13px}
+        .PostBody{font-size:15px}
 
         .PhotoGif{position:absolute;left:40px;top:150px;}
         #PhotoGifImage{width:400px;height:300px;border-radius:10%;box-shadow: 0px 1px 7px black}
@@ -210,6 +210,9 @@
 
         .SortPostsBy:hover{font-weight:bolder;color:white;text-shadow: 0px 1px 10px black;}
         .SortPostsBy:active{font-weight:bolder;color:#00284e;text-shadow: 0px 1px 15px black;}
+
+        .PostPhoto{position:absolute;margin: 20px 0px 0px 0px}
+        #PostPhotoImage{width:320px;height:200px;border-radius:10%;box-shadow: 0px 1px 7px black;}
 
     </style>
 
@@ -221,25 +224,25 @@
 	</div>
 
     <!-- Navbar Logo -->
-	<a class="NavbarLogo"><img src="https://www.nicepng.com/png/full/170-1709508_web-solutions-web-icon-white-png.png" id="NavbarLogoImage"></a>
+	<a href="https://akiguanzon.github.io/Group13_MP/index.html" class="NavbarLogo"><img src="https://www.nicepng.com/png/full/170-1709508_web-solutions-web-icon-white-png.png" id="NavbarLogoImage"></a>
 
     <!-- Navbar Title -->
-	<a id="font2" class="NavbarTitle">social-net</a>
+	<a href="https://akiguanzon.github.io/Group13_MP/index.html" id="font2" class="NavbarTitle">social-net</a>
     
     <!-- Navbar Slogan -->
-	<a id="font2" class="NavbarSlogan">find your everyday reads here!</a>
+	<a href="https://akiguanzon.github.io/Group13_MP/index.html" id="font2" class="NavbarSlogan">find your everyday reads here!</a>
 
     <!-- Navbar User Icon -->
-    <a class="NavbarUserIcon"><img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" id="NavbarIconImage"></a>
+    <a href="https://akiguanzon.github.io/Group13_MP/login-signup-forgotpassword/registration.html" class="NavbarUserIcon"><img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" id="NavbarIconImage"></a>
 
     <!-- Navbar Home Icon -->
-    <a class="NavbarHomeIcon"><img src="https://www.pngkey.com/png/full/12-127881_house-blue-clipart-royalty-free-library-free-home.png" id="NavbarIconImage"></a>
+    <a href="https://akiguanzon.github.io/Group13_MP/index.html" class="NavbarHomeIcon"><img src="https://www.pngkey.com/png/full/12-127881_house-blue-clipart-royalty-free-library-free-home.png" id="NavbarIconImage"></a>
 
     <!-- Navbar Logout Icon -->
-    <a class="NavbarLogoutIcon"><img src="https://freesvg.org/img/1538677257.png" id="NavbarIconImage"></a>
+    <a href="https://akiguanzon.github.io/Group13_MP/login-signup-forgotpassword/login.html" class="NavbarLogoutIcon"><img src="https://freesvg.org/img/1538677257.png" id="NavbarIconImage"></a>
 
     <!-- Navbar Create Post Icon -->
-    <a class="NavbarCreatePostIcon"><img src="https://cdn0.iconfinder.com/data/icons/interface-icons-rounded/110/Pencil-512.png" id="NavbarIconImage"></a>
+    <a href="https://akiguanzon.github.io/Group13_MP/submitpost/create.html" class="NavbarCreatePostIcon"><img src="https://cdn0.iconfinder.com/data/icons/interface-icons-rounded/110/Pencil-512.png" id="NavbarIconImage"></a>
   	
   	<!-- Navbar Search Button -->
     <a style="position:fixed;right:45px;top:20px"><button class="button topnavbutton">Search</button></a>
@@ -248,9 +251,9 @@
         <input type="text"style="postition:fixed;right:155px;top:25px;width:400px">
     </form>
     <!-- Profile Icon -->
-    <a class="ProfileIcon"><img src="https://www.netliteracy.org/wp-content/uploads/2020/07/Capture-3-768x758.png" id="ProfileIconImage"></a>
+    <a href="https://akiguanzon.github.io/Group13_MP/Userpages/UserpageSallyAnon.html" class="ProfileIcon"><img src="https://www.netliteracy.org/wp-content/uploads/2020/07/Capture-3-768x758.png" id="ProfileIconImage"></a>
     <!-- Profile Username -->
-    <a id="font2" class="ProfileUsername">SallyAnon</a>
+    <a href="https://akiguanzon.github.io/Group13_MP/Userpages/UserpageSallyAnon.html" id="font2" class="ProfileUsername">SallyAnon</a>
 	
 
     <div class="userpageframe">
@@ -260,9 +263,10 @@
         <!-- Bio Description -->
         <div id="font1" class="BioDesc">I’m SallyAnon, I love music and I love to travel. I'm selling tickets for the big concert, dm me for info.</div>
 
-        <div id="font1" class="SortPostsBy" style="right:450px">Sort Posts By:</div>
-        <div id="font1" class="SortPostsBy" style="right:300px">By Category</div>
-        <div id="font1" class="SortPostsBy" style="right:160px">By Latest</div>
+        <div id="font1" class="SortPostsBy" style="right:450px">View Posts By:</div>
+        <div onclick="location.href='https://akiguanzon.github.io/Group13_MP/index.html';" id="font1" class="SortPostsBy" style="right:300px">By Category</div>
+        <div onclick="location.href='https://akiguanzon.github.io/Group13_MP/search-list/latest.html';" id="font1" class="SortPostsBy" style="right:160px">By Latest</div>
+        <div onclick="location.href='https://akiguanzon.github.io/Group13_MP/search-list/featured.html';" id="font1" class="SortPostsBy" style="right:40px">By Feature</div>
 
         <!-- Photo Gif -->
         <div class="PhotoGif"><img src="https://thumbs.gfycat.com/ThoroughWickedCowrie-max-1mb.gif" id="PhotoGifImage"></div>
@@ -271,21 +275,22 @@
         <div id="font2" class="PostDisplayTitle">SallyAnon's Posts</div>
         <!-- "Posts Displayer -->
         <div class="UserpagePosts" style="right:50px;top:150px;color:#003C75">
-        	<!-- Post 1 -->
-        	<div class="UserpagePostsPosts">
-            	<div style="#PostTitle">Title: Where to Travel for Christmas?</div>
-                <div style="#PostDescription">Date Posted: 10/04/2022</div>
-                <div style="#PostDescription">Category: Travel</div>
-                <div style="#PostBody"><br>I’ve been all over the world and back so I don’t know where to travel to for Christmas. I’m thinking about going to Aspen though.</div>
+            <!-- Post 1 -->
+        	<div onclick="location.href='https://akiguanzon.github.io/Group13_MP/Userpages/UserpageSallyAnon.html';" class="UserpagePostsPosts">
+            	<div id="font2" class="PostTitle">Where to Travel for Christmas?</div>
+                <div class="PostDescription">October 4, 2022</div>
+                <div class="PostDescription">Uncategorized</div>
+                <div class="PostBody">I’ve been all over the world and back so I don’t know where to travel to for Christmas. I’m thinking about going to Aspen though.</div>
             </div>
-            
+
             <!-- Post 2 -->
-        	<div class="UserpagePostsPosts">
-            	<div id="#PostTitle">Title: Bad Album Releases Recently</div>
-                <div id="#PostDescription">Date Posted: 10/08/2022</div>
-                <div id="#PostDescription">Category: Art</div>
-                <div id="#PostBody"><br>To be honest, I don’t like the recent album rollout of some artists. The songs are so bland and the albums don’t have cohesive themes. They’re just not it.</div>
+        	<div onclick="location.href='https://akiguanzon.github.io/Group13_MP/Userpages/UserpageSallyAnon.html';" class="UserpagePostsPosts">
+            	<div id="font2" class="PostTitle">Bad Album Releases Recently</div>
+                <div class="PostDescription">October 10, 2022</div>
+                <div class="PostDescription">Uncategorized</div>
+                <div class="PostBody">To be honest, I don’t like the recent album rollout of some artists. The songs are so bland and the albums don’t have cohesive themes. They’re just not it.</div>
             </div>
+
         </div>
     </div>
 
