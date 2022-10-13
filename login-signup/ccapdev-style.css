@@ -64,6 +64,18 @@ body{
     padding: 20px;
 }
 
+.resetBox{
+    width: 50%;
+    height: 65%;
+    box-shadow: 5px 10px 15px black;
+    border-radius: 10px;
+    background-color: white;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 25%;
+    padding: 20px;
+}
+
 .fields{
     margin-left: auto;
     margin-right: auto;
@@ -92,6 +104,12 @@ p.greetings{
 
 p.misc{
     font-size: 15px;
+}
+
+p.misc2{
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
 }
 
 label.misc{
