@@ -321,7 +321,7 @@ h2 {
     height: 650px;
     background-color: var(--primary);
     display: inline-block;
-    margin: 10px 0px;
+    margin: 10px 10px;
     white-space: normal;
     transition: all 0.5s;
     color: var(--text-primary);
@@ -335,7 +335,9 @@ h2 {
 }
 
 .cardContent {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin-left: 1rem;
 }
 
@@ -345,7 +347,7 @@ h2 {
 }
 
 .cardHeader {
-    font-size: 2.5rem;
+    font-size: 2rem;
     padding: 1rem 0 1rem 0;
     text-align: center;
     transition: all 0.1s;
@@ -378,6 +380,7 @@ h2 {
     height: 15rem;
     align-self: center;
     margin-left: 2.2rem;
+    margin-right: 2.2rem;
     border-radius: 5%;
 }
 
@@ -396,7 +399,7 @@ h2 {
     padding-top: 2rem;
     padding-left: 1rem;
     padding-right: 1rem;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
 .scroll-case {
@@ -411,6 +414,7 @@ h2 {
     -webkit-overflow-scrolling: touch;
     scroll-behavior: smooth;
     margin: 0 2rem;
+    display: flex;
 }
 
 .scrolling-wrapper::-webkit-scrollbar {
@@ -461,6 +465,7 @@ h2 {
 
 .featured {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-image: linear-gradient(45deg, transparent 20%, var(--accent) 25%, transparent 25%),
