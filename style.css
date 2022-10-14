@@ -303,6 +303,24 @@ h2 {
     color: var(--text-primary);
 }
 
+.create-post {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0;
+    font-size: 3.5rem;
+    font-family: var(--title-font);
+    background-image: linear-gradient(45deg, transparent 20%, var(--accent) 25%, transparent 25%),
+        linear-gradient(-45deg, transparent 20%, var(--accent) 25%, transparent 25%),
+        linear-gradient(-45deg, transparent 75%, var(--accent) 80%, transparent 0),
+        radial-gradient(var(--subtle) 2px, transparent 0);
+    background-size: 30px 30px, 30px 30px;
+}
+
+.create-btn {
+    padding: 0 2rem;
+}
+
 /* START OF SCROLLING/CARD CODE */
 
 .section-title {
@@ -504,7 +522,7 @@ h2 {
     width: 80rem;
     height: 33rem;
     align-self: center;
-    margin: 2rem 0 4rem 0;
+    margin: 2rem 4rem 4rem 0;
     border-radius: 10%;
 }
 
